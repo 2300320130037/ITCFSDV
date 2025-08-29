@@ -1,0 +1,35 @@
+h2,p,h3{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.heading1{
+    text-align: center;
+}
+div ~p{
+    background-color: aqua;
+    color: brown;
+}
+p:hover{
+    background-color: blanchedalmond;
+    font-size: small;
+    color: blue;
+}
+p::after{
+    content: "react development ";
+    background-color: chartreuse;
+    color: white;
+}
+p::before{
+    content: "hello bro";
+    background-color: chocolate;
+    color: white;
+}
+p::selection{
+    background-color: green;
+}
+p:nth-child(2){
+    background-color: black;
+}
+div p :nth-of-type(1){
+    background-color: cornflowerblue;
+}
