@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function getdata(){
+        //alert("Hi.....reached")
+        const myname=document.getElementById('username').value;
+        //alert("hi "+myname);
+        document.getElementById('disp').innerHTML='<h2> style='color:white; background-color:black'>$(myname)</h2>'
+    }
+</script>
+<body>
+    <style>
+    .userdata{
+    width:350px;
+    margin:50px;
+    padding:20px;
+    border:2px solid;
+    border-radius: 10px;
+    background-color: white;
+
+      }
+</style>
+   
+    <div class="userdata">
+    <h2 align="center">USER INFO</h2>
+    <label>Enter   Name : </label>
+    <input type="text" placeholder="enter name" id="username">
+    <!--<button onclick="getdata()" id="disp">Get Data</button>--><br><br>
+    <label>Enter Branch: </label>
+    <input type="text" placeholder="enter branch" id="username"><br><br>
+    <label>Enter Section: </label>
+    <input type="text" placeholder="enter section" id="username"><br><br>
+    <label>Enter Collage: </label>
+    <input type="text" placeholder="enter college" id="username"><BR><br>
+    <label>Enter Location: </label>
+    <input type="text" placeholder="enter location" id="username"><br><br>
+    <label>Enter University: </label>
+    <input type="text" placeholder="enter University" id="username">
+    </div>
+    
+    
+    

@@ -1,66 +1,168 @@
-.box{
+.box {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 200px 500px 200px;
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr;
+    /* header + subheader auto height */
+    height: 100vh;
 }
-.box1{
-    background-color: aqua;
-    border: 1px dotted red;
-    display :grid ;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    /*grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    */
-    .box11{
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        background-color: chartreuse;
-        margin-top: 20px;
-        margin-left: 20px ;
 
-    }
-    .box12{
-         width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        background-color: rgb(81, 6, 65);
-        margin-top: 20px;
-        margin-left: 20px ;
-        
-    }
-    .box13{
-         width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        background-color: rgb(83, 16, 159);
-        margin-top: 20px;
-        margin-left: 20px ;
-        
-    }
-    .box14{
-         width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        background-color: rgb(137, 186, 72);
-        margin-top: 20px;
-        margin-left: 20px ;
-    }
+.header {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
 }
-.box2{
-    background-color: rgb(129, 22, 94);
-    border: 1px dotted rgb(97, 18, 18);
+
+.subHeader {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    background-color: rgb(30, 3, 94);
+    color: aliceblue;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
 }
-.box3{
-    background-color: rgb(58, 129, 22);
-    border: 1px dotted rgb(10, 66, 66);
+
+.box1 {
+    border: 1px dotted red;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
-.box4{
-    background-color: rgb(79, 2, 94);
-    border: 1px dotted rgb(76, 81, 5);
-    
+.box10
+
+.box11,
+.box12,
+.box13,
+.box14 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+
+.box11 {
+    background-color: chartreuse;
+}
+
+.box12 {
+    background-color: bisque;
+}
+
+.box13 {
+    background-color: cornsilk;
+}
+
+.box14 {
+    background-color: darkgrey;
+}
+
+.box2 {
+    border: 1px dotted red;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.box21,
+.box22,
+.box23,
+.box24 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.box21 {
+    background-color: chartreuse;
+}
+
+.box22 {
+    background-color: bisque;
+}
+
+.box23 {
+    background-color: cornsilk;
+}
+
+.box24 {
+    background-color: darkgrey;
+}
+
+.box3 {
+    border: 1px dotted red;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:100px;
+    padding: 10px;
+}
+.box31,
+.box32,
+.box33,
+.box34 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.box31 {
+    background-color: chartreuse;
+}
+
+.box32 {
+    background-color: bisque;
+}
+
+.box33 {
+    background-color: cornsilk;
+}
+
+.box34 {
+    background-color: darkgrey;
+}
+
+.box4 {
+    border: 1px dotted red;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box41 {
+  border: 1px dotted red;
+  background-color: white;
+  height: 150px;
+  width: 350px;
+  
+}
+
+.box42 {
+  border: 1px dotted red;
+  background-color: white;
+  height: 300px;
+  width: 350px;
+}
+.footer{
+    background-color: rgb(49, 17, 101);
+    height: 150px;
+     
 }
