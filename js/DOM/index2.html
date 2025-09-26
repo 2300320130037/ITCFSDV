@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
-    <!-- <script>
-        function getData(){
-            // alert("Hiiii.........")
-           const myName= document.getElementById('userName1').value
-           const myBranch= document.getElementById('userName2').value
-           const mySection= document.getElementById('userName3').value
-           const myCollege= document.getElementById('userName4').value
-           const myLocation= document.getElementById('userName5').value
-           const myUniversity= document.getElementById('userName6').value
-            // alert("Hii "+myName)
-            document.getElementById('disp1').innerHTML=<h2>${myName}</h2>
-            document.getElementById('disp2').innerHTML=<h2>${myBranch}</h2>
-            document.getElementById('disp3').innerHTML=<h2>${mySection}</h2>
-            document.getElementById('disp4').innerHTML=<h2>${myCollege}</h2>
-            document.getElementById('disp5').innerHTML=<h2>${myLocation}</h2>
-            document.getElementById('disp6').innerHTML=<h2>${myUniversity}</h2>
-        }
-    </script>
-    <style>
-        .div{
-            margin-left: 500px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
-            height: 450px;
-            width: 400px;
-            border: 2px solid black;
-            background-color:rgb(60, 148, 183);
-        }
-    </style> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Info</title>
+  <!-- <script>
+    function getData() {
+      const name=document.getElementById("name").value;
+      const branch=document.getElementById("branch").value;
+      const section=document.getElementById("section").value;
+      const college=document.getElementById("college").value;
+      const location=document.getElementById("location").value;
+      const university=document.getElementById("university").value;
+      document.getElementById("disp").innerHTML = `
+        <div style="border:1px solid #333; padding:15px; margin-top:15px; border-radius:8px; background:#f9f9f9; width:280px;">
+          <h3 style="margin:6px 0;">Name: ${name}</h3>
+          <h3 style="margin:6px 0;">Branch: ${branch}</h3>
+          <h3 style="margin:6px 0;">Section: ${section}</h3>
+          <h3 style="margin:6px 0;">College: ${college}</h3>
+          <h3 style="margin:6px 0;">Location: ${location}</h3>
+          <h3 style="margin:6px 0;">University: ${university}</h3>
+        </div>`;
+    }
+  </script> -->
 </head>
 <body >
-    <!-- <h1 style="text-align: center;">User Information</h1>
-    <div class="div">
-    <label for="">Enter Name:</label><input type="text" id="userName1" placeholder="Enter Name"> <br><br>
-    <label for="">Enter Brach:</label><input type="text" id="userName2" placeholder="Enter Brach"> <br><br>
-    <label for="">Enter Section:</label><input type="text" id="userName3" placeholder="Enter Section"> <br><br>
-    <label for="">Enter College:</label><input type="text" id="userName4" placeholder="Enter College"> <br><br>
-    <label for="">Enter Location:</label><input type="text" id="userName5" placeholder="Enter Location">  <br><br>
-    <label for="">Enter University:</label><input type="text" id="userName6" placeholder="Enter University"> <br><br>
-    <button onclick="getData()">getData</button>
-    </div>
-    
-    <br>
-    <div id="disp1"></div>
-    <div id="disp2"></div>
-    <div id="disp3"></div>
-    <div id="disp4"></div>
-    <div id="disp5"></div>
-    <div id="disp6"></div> -->
-    <div class="container"></div>
-    <button id="btn"> get data</button>
-    <script src="index.js"></script>
+  <!-- style="font-family: Arial, sans-serif; margin:20px;">
+  <h2>User Info</h2>
+  Name: <input type="text" id="name" placeholder="Enter your name" style="margin:5px; padding:5px;"><br><br>
+  Branch: <input type="text" id="branch" placeholder="Enter your branch" style="margin:5px; padding:5px;"><br><br>
+  Section: <input type="text" id="section" placeholder="Enter your section" style="margin:5px; padding:5px;"><br><br>
+  College: <input type="text" id="college" placeholder="Enter your college" style="margin:5px; padding:5px;"><br><br>
+  Location: <input type="text" id="location" placeholder="Enter your location" style="margin:5px; padding:5px;"><br><br>
+  University: <input type="text" id="university" placeholder="Enter your university" style="margin:5px; padding:5px;"><br><br>
+  <button onclick="getData()" style="margin-top:10px; padding:8px 15px; background:#333; color:white; border:none; border-radius:5px;">
+    Submit
+  </button>
+
+  <div id="disp"></div> -->
+  <!-- <div class="container"></div> -->
+  <button id="btn">getData</button> 
+  <script src="index.js"></script>
 </body>
 </html>

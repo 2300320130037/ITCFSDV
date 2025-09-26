@@ -1,64 +1,47 @@
-//console.log("hello world");
-//var a=20;
-// let a=50;
-// if(a>10){
-//     let a=100;
-//     console.log("a="+a);
-// }else{
-//     console.log("hii")
-// }
-// console.log("hiii"+a);
-// const a=23;
-// a=50;
-// console.log("a="+a);
-// function fun(msg){
-//     return "hey..."+msg;
-//     console.log("hello");
-// }
-// const data=fun("greeeting....");
-// console.log(data);
-// const data=function(a,b){
-//     return a*b;
-// }
-// console.log(data(5,6));
-// const data=(msg)=>{
-//     console.log("hey .. using arrow function"+msg);
-// }
-// data("in react development");
-// const data=msg=>msg;
-// const output=data("greeting of the day");
-// console.log(output);
-// IIFE - Immediately invoked function expression
-// (function(){
-//     console.log("welcome to mern session")
-// })();
-// setTimeout(()=>{
-//     console.log("welcome to mern session ");
-// },5000);
+// const container = document.getElementsByClassName("container");
 
-// function greet(msg="java"){
-//     console.log(msg+" is a programming language");
+// const h2 = document.createElement("h2");
+// h2.innerText = "ABES Engineering College";
+// h2.style.color = "white";
+// h2.style.backgroundColor = "brown";
+// console.log(h2);
+// container[0].appendChild(h2);
+
+// const button = document.getElementById("btn");
+// console.log(button);
+
+// function msg() {
+//     container[0].innerHTML = "";
+
+//     const loadingMsg = document.createElement('p');
+//     loadingMsg.innerText = "Loading Image...";
+//     loadingMsg.style.color = "blue";
+//     loadingMsg.style.fontSize = "20px";
+//     container[0].appendChild(loadingMsg);
+//     setTimeout(() => {
+//         container[0].innerHTML = "";
+        
+//         const img = document.createElement('img');
+//         img.src = "download.jpg";
+//         img.setAttribute("height", "200px");
+//         img.setAttribute("width","200px");
+//         console.log(img);
+//         container[0].appendChild(img);
+
+//         const h3 = document.createElement('h3');
+//         h3.innerText = "Welcome to ABES ENGINEERING COLLEGE";
+//         h3.style.color = "yellow";
+//         h3.style.backgroundColor = "red";
+//         container[0].appendChild(h3);
+//     }, 3000); 
 // }
-// greet("python");
+// button.addEventListener("click", msg);
+function longdata(){
+    console.log("Start");
+    for(i=0;i<10000000;i++){
+        console.log(i)
+    })
+    console.log("End")
 
-function selectlanguage(lang){
-    let result;
-    if( lang == " java"){
-        function javacompiler(){
-            return " using java compiler"
-        }
-        result = javacompiler();
- }
- else if(lang=='c'){
-    function cCompiler(){
-        return " using c compiler";
-
-    }
-    result = cCompiler();
- }else{ result =" no compiler fouund";
-
- }
- return result}
-console.log(selectlanguage("java"));
-console.log(selectlanguage(" c"));
-console.log(selectlanguage("Python"));
+}
+button.addEventListener('click',longdata)
