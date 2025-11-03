@@ -1,19 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Profile from './component/Profile'
-import Gallery from './component/gallery'
+import React from 'react';
+import './App.css';
+import ImageManipulation from './component/ImageManipulation';
 
 function App() {
   return (
     <>
-    <div className='container' >
-     <h2 >Gallary</h2>
-     <Gallery/>
-
-     </div>
+      <div>
+        {/* Uncomment if needed later */}
+        {/* <h2>Welcome to ReactViteApp</h2>
+        <h2>State Handling</h2>
+        <StateHandling /> */}
+        
+        <ImageManipulation />
+      </div>
     </>
-  )
+  );
 }
-export default App
+
+export default App;
